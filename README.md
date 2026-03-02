@@ -1,5 +1,5 @@
 
-# 📊 Telecom Customer Churn Prediction using Machine Learning (Deployed on AWS EC2)
+# Telecom Customer Churn Prediction using Machine Learning (Deployed on AWS EC2)
 
 ## 📌 Project Overview  
 Customer churn is a critical business challenge in the telecom industry. Retaining customers is significantly more cost-effective than acquiring new ones. This project builds and deploys a machine learning model that predicts whether a telecom customer is likely to churn.
@@ -19,6 +19,7 @@ The solution includes:
 ## 🎯 Business Problem
 
 Telecom companies want to:
+
 - Anticipate which customers are likely to churn
 - Take proactive action (offers, discounts, improved service)
 - Optimize marketing budgets
