@@ -7,9 +7,13 @@ Customer churn is a critical business challenge in the telecom industry. Retaini
 The solution includes:
 
 -End-to-end data analysis
+
 -Feature engineering
+
 -Model development & evaluation
+
 -Interactive web application (Streamlit)
+
 -Cloud deployment on AWS EC2
 
 🔗 Live Application: http://44.249.144.7:8501
@@ -22,8 +26,11 @@ The solution includes:
 Telecom companies want to:
 
 - Anticipate which customers are likely to churn
+
 - Take proactive action (offers, discounts, improved service)
+
 - Optimize marketing budgets
+
 - Improve customer lifetime value
 
 This solution predicts whether a customer will churn and provides a churn probability score that helps prioritization.
@@ -55,16 +62,13 @@ Below is the high-level flow of the system:
 ## Tech Stack & Tools
 
 ### 💻 Programming
-
 -Python
 
 ### 📊 Data Processing
-
 -pandas
 -numpy
 
 ### 🤖 Machine Learning
-
 -scikit-learn
 -imbalanced-learn (SMOTE, SMOTEENN)
 -XGBoost
@@ -87,12 +91,14 @@ Below is the high-level flow of the system:
 ### 1. Data Analysis & Preprocessing ("The Investigation")
 
 - Explored distributions, relationships, and churn indicators
-- Handled missing/erroneous values
-- Created derived features (e.g., tenure bins)
-- Encoded categorical variables
-- Scaled numerical features
 
----
+- Handled missing/erroneous values
+
+- Created derived features (e.g., tenure bins)
+
+- Encoded categorical variables
+
+- Scaled numerical features
 
 ### 2. Handling Class Imbalance ("The Balancing Act")
 
@@ -103,17 +109,20 @@ Imbalanced datasets can severely affect classifier performance. This project app
 
 This improves model learning on churn class, which is typically underrepresented.
 
----
-
 ### 3. Model Development & Optimization ("The Prediction Engine")
 
 Multiple models were trained and compared:
 
 - Logistic Regression  
+
 - Random Forest  
+
 - XGBoost  
+
 - LightGBM  
+
 - CatBoost  
+
 - AdaBoost  
 
 **Final model selected:**  
@@ -129,8 +138,11 @@ Hyperparameters were tuned using **Optuna**, a modern automated optimization fra
 An interactive web application was built using **Streamlit**, allowing users to:
 
 - Input customer information
+
 - Get churn prediction (Yes/No)
+
 - View churn probability
+
 - Trigger backend preprocessing & inference
 
 The app uses the **same preprocessing pipeline** as the trained model to ensure consistency.
@@ -142,9 +154,13 @@ The app uses the **same preprocessing pipeline** as the trained model to ensure 
 The application is deployed on an **AWS EC2 Ubuntu instance** using the following steps:
 
 1. Launch an EC2 instance (Ubuntu)
+
 2. Set up a Python virtual environment
+
 3. Clone the project repository
+
 4. Install dependencies from `requirements.txt`
+
 5. Run Streamlit as a background service using `nohup`:
 
 ---
@@ -154,8 +170,11 @@ The application is deployed on an **AWS EC2 Ubuntu instance** using the followin
 ### 📈 Performance Highlights:
 
 -Improved recall for churn class using SMOTEENN
+
 -Optimized hyperparameters via Optuna
+
 -Robust generalization on unseen data
+
 -Probability-based churn risk scoring
 
 ### 💼 Business Impact:
@@ -163,9 +182,13 @@ The application is deployed on an **AWS EC2 Ubuntu instance** using the followin
 This system enables telecom companies to:
 
 -Identify high-risk customers early
+
 -Reduce customer attrition
+
 -Optimize retention campaigns
+
 -Improve revenue forecasting
+
 -Increase customer lifetime value
 
 ---
@@ -173,10 +196,16 @@ This system enables telecom companies to:
 ## Future Improvements:
 
 -Add SHAP explainability dashboard
+
 -Containerize application using Docker
+
 -Deploy behind Nginx reverse proxy
+
 -Add CI/CD pipeline (GitHub Actions)
+
 -Integrate monitoring & logging
+
 -Auto-scaling infrastructure
+
 -Convert to REST API (FastAPI backend)
 
