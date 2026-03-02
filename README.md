@@ -61,14 +61,14 @@ Below is the high-level flow of the system:
 
 ## Tech Stack & Tools
 
-### 💻 Programming
+#### 💻 Programming
 -Python
 
-### 📊 Data Processing
+#### 📊 Data Processing
 -pandas
 -numpy
 
-### 🤖 Machine Learning
+#### 🤖 Machine Learning
 -scikit-learn
 -imbalanced-learn (SMOTE, SMOTEENN)
 -XGBoost
@@ -76,10 +76,10 @@ Below is the high-level flow of the system:
 -CatBoost
 -Optuna
 
-### 🌐 Web Application
+#### 🌐 Web Application
 -Streamlit
 
-### ☁️ Cloud & Deployment
+#### ☁️ Cloud & Deployment
 -AWS EC2
 -Ubuntu Linux
 -Python Virtual Environment (.venv)
@@ -99,6 +99,19 @@ Below is the high-level flow of the system:
 - Encoded categorical variables
 
 - Scaled numerical features
+
+![Churn Analysis EDA](Churn_Analysis_EDA1.png) 
+
+
+**HIGH** Churn seen in case of **Month to month contracts, No online security, No Tech support, First year of subscription and Fibre Optics Internet**
+
+**LOW** Churn is seens in case of **Long term contracts, Subscriptions without internet service and The customers engaged for 5+ years**
+
+Factors like **Gender, Availability of PhoneService and # of multiple lines** have alomost **NO** impact on Churn
+
+This is also evident from the **Heatmap** below
+
+![Churn Analysis EDA](Churn_Analysis_EDA2.png) 
 
 ### 2. Handling Class Imbalance ("The Balancing Act")
 
@@ -153,15 +166,15 @@ The app uses the **same preprocessing pipeline** as the trained model to ensure 
 
 The application is deployed on an **AWS EC2 Ubuntu instance** using the following steps:
 
-1. Launch an EC2 instance (Ubuntu)
+-Launch an EC2 instance (Ubuntu)
 
-2. Set up a Python virtual environment
+-Set up a Python virtual environment
 
-3. Clone the project repository
+-Clone the project repository
 
-4. Install dependencies from `requirements.txt`
+-Install dependencies from `requirements.txt`
 
-5. Run Streamlit as a background service using `nohup`:
+-Run Streamlit as a background service using `nohup`:
 
 ---
 
