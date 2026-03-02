@@ -5,6 +5,7 @@
 Customer churn is a critical business challenge in the telecom industry. Retaining customers is significantly more cost-effective than acquiring new ones. This project builds and deploys a machine learning model that predicts whether a telecom customer is likely to churn.
 
 The solution includes:
+
 -End-to-end data analysis
 -Feature engineering
 -Model development & evaluation
@@ -53,14 +54,17 @@ Below is the high-level flow of the system:
 
 ## Tech Stack & Tools
 
-💻 Programming
+### 💻 Programming
+
 -Python
 
-📊 Data Processing
+### 📊 Data Processing
+
 -pandas
 -numpy
 
-🤖 Machine Learning
+### 🤖 Machine Learning
+
 -scikit-learn
 -imbalanced-learn (SMOTE, SMOTEENN)
 -XGBoost
@@ -68,10 +72,10 @@ Below is the high-level flow of the system:
 -CatBoost
 -Optuna
 
-🌐 Web Application
+### 🌐 Web Application
 -Streamlit
 
-☁️ Cloud & Deployment
+### ☁️ Cloud & Deployment
 -AWS EC2
 -Ubuntu Linux
 -Python Virtual Environment (.venv)
@@ -93,6 +97,7 @@ Below is the high-level flow of the system:
 ### 2. Handling Class Imbalance ("The Balancing Act")
 
 Imbalanced datasets can severely affect classifier performance. This project applies:
+
 - **SMOTE (Synthetic Minority Over-sampling Technique)**
 - **SMOTEENN (SMOTE + Edited Nearest Neighbors cleanup)**
 
@@ -103,6 +108,7 @@ This improves model learning on churn class, which is typically underrepresented
 ### 3. Model Development & Optimization ("The Prediction Engine")
 
 Multiple models were trained and compared:
+
 - Logistic Regression  
 - Random Forest  
 - XGBoost  
@@ -144,14 +150,18 @@ The application is deployed on an **AWS EC2 Ubuntu instance** using the followin
 ---
 
 ## Model Performance & Business Impact
+
 ### 📈 Performance Highlights:
+
 -Improved recall for churn class using SMOTEENN
 -Optimized hyperparameters via Optuna
 -Robust generalization on unseen data
 -Probability-based churn risk scoring
 
 ### 💼 Business Impact:
+
 This system enables telecom companies to:
+
 -Identify high-risk customers early
 -Reduce customer attrition
 -Optimize retention campaigns
@@ -161,6 +171,7 @@ This system enables telecom companies to:
 ---
 
 ## Future Improvements:
+
 -Add SHAP explainability dashboard
 -Containerize application using Docker
 -Deploy behind Nginx reverse proxy
