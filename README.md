@@ -174,7 +174,13 @@ The application is deployed on an **AWS EC2 Ubuntu instance** using the followin
 
 -Install dependencies from `requirements.txt`
 
--Run Streamlit as a background service using `nohup`:
+-Run Streamlit as a background service using `nohup`
+
+🔗 Live Application: http://44.249.144.7:8501
+(Server availability may vary depending on instance status.)
+
+![AWS EC2 Deployment](Deployment.png) 
+
 
 ---
 
