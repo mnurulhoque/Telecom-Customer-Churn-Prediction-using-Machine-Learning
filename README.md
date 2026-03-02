@@ -55,7 +55,7 @@ The project uses the **Telco Customer Churn dataset**, which includes:
 
 Below is the high-level flow of the system:
 
-![Architecture Diagram](Project Architecture.png)
+![Architecture Diagram](Project_Architecture.png) 
 
 ---
 
