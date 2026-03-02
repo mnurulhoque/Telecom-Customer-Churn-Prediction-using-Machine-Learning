@@ -114,8 +114,6 @@ Multiple models were trained and compared:
 
 Hyperparameters were tuned using **Optuna**, a modern automated optimization framework that efficiently discovers the best configuration.
 
-The final trained model is saved as:
-
 
 ---
 
@@ -132,7 +130,7 @@ The app uses the **same preprocessing pipeline** as the trained model to ensure 
 
 ---
 
-## ☁️ Deployment (AWS EC2)
+### 5. Deployment (AWS EC2)
 
 The application is deployed on an **AWS EC2 Ubuntu instance** using the following steps:
 
@@ -142,22 +140,16 @@ The application is deployed on an **AWS EC2 Ubuntu instance** using the followin
 4. Install dependencies from `requirements.txt`
 5. Run Streamlit as a background service using `nohup`:
 
-```bash
-nohup python3 -m streamlit run streamlit_app.py \
-    --server.port 8501 \
-    --server.address 0.0.0.0 \
-    > app.log 2>&1 &
-
 ---
 
 ## Model Performance & Business Impact
-📈 Performance Highlights:
+### 📈 Performance Highlights:
 -Improved recall for churn class using SMOTEENN
 -Optimized hyperparameters via Optuna
 -Robust generalization on unseen data
 -Probability-based churn risk scoring
 
-💼 Business Impact
+### 💼 Business Impact:
 This system enables telecom companies to:
 -Identify high-risk customers early
 -Reduce customer attrition
@@ -168,11 +160,11 @@ This system enables telecom companies to:
 ---
 
 ## Future Improvements:
-Add SHAP explainability dashboard
-Containerize application using Docker
-Deploy behind Nginx reverse proxy
-Add CI/CD pipeline (GitHub Actions)
-Integrate monitoring & logging
-Auto-scaling infrastructure
-Convert to REST API (FastAPI backend)
+-Add SHAP explainability dashboard
+-Containerize application using Docker
+-Deploy behind Nginx reverse proxy
+-Add CI/CD pipeline (GitHub Actions)
+-Integrate monitoring & logging
+-Auto-scaling infrastructure
+-Convert to REST API (FastAPI backend)
 
